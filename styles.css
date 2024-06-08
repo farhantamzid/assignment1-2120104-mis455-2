@@ -1,3 +1,4 @@
+/* navbar styling*/
 ul {
   list-style-type: none;
   margin: 0;
@@ -18,13 +19,15 @@ li a {
   font-family: "Oswald", sans-serif;
   font-size: large;
 }
-
+/* navbar hover effect*/
 li a:hover {
   background-color: #04aa6d;
 }
+/* navbar active effect*/
 .active {
   background-color: #0a6544;
 }
+
 .history {
   text-align: center;
   font-family: "Oswald", sans-serif;
@@ -40,6 +43,7 @@ li a:hover {
   grid-column-start: 1;
   grid-column-end: -1;
 }
+/* flex container*/
 .container {
   display: flex;
   justify-content: space-around;
@@ -74,10 +78,11 @@ p:hover {
   align-self: center;
   box-shadow: 5px 4px 3px grey;
 }
+/* grid container*/
 .hwcontainer {
   display: grid;
-  grid-template-rows: 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(16, 25px);
+  grid-template-columns: repeat(8, 1fr);
 }
 .h1grid {
   grid-row-start: 5;
