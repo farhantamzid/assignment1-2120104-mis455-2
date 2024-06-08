@@ -19,6 +19,10 @@ li a {
   font-family: "Oswald", sans-serif;
   font-size: large;
 }
+/*background pattern*/
+body {
+  background-image: url("./images/bgpattern.jpg");
+}
 /* navbar hover effect*/
 li a:hover {
   background-color: #04aa6d;
