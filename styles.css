@@ -51,6 +51,9 @@ li a:hover {
 p {
   font-family: "Roboto Slab", sans-serif;
 }
+p:hover {
+  background-color: beige;
+}
 .p1 {
   padding: 20px;
   border: 2px solid lightcoral;
