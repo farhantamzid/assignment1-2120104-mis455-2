@@ -48,12 +48,14 @@ li a:hover {
   margin-right: 90px;
   padding: 10px;
 }
+p {
+  font-family: "Roboto Slab", sans-serif;
+}
 .p1 {
   padding: 20px;
   border: 2px solid lightcoral;
   background-color: rgba(173, 162, 79, 0.575);
   border-radius: 30px;
-  font-family: "Roboto Slab", sans-serif;
   box-shadow: 5px 4px 3px grey;
 }
 .p2 {
@@ -62,7 +64,6 @@ li a:hover {
   padding: 20px;
   background-color: rgba(173, 162, 79, 0.575);
   border-radius: 30px;
-  font-family: "Roboto Slab", sans-serif;
   box-shadow: 5px 4px 3px grey;
 }
 .logo {
@@ -77,6 +78,45 @@ li a:hover {
 .h1grid {
   grid-row-start: 5;
   grid-column-start: 4;
-  grid-row-end: auto;
+  grid-row-end: 6;
   grid-column-end: 6;
+}
+
+.homeworkContentGrid {
+  padding-left: 100px;
+  padding-right: 100px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(10, 100px);
+  grid-gap: 5px;
+}
+.hwleftimage {
+  grid-column: 1 / 3;
+  grid-row: 1 /3;
+  box-shadow: 5px 4px 3px grey;
+}
+
+.hwrightimage {
+  grid-column: 6 / auto;
+  grid-row: 6 / auto;
+  box-shadow: 5px 4px 3px grey;
+}
+.hwgridcontent1 {
+  background-color: antiquewhite;
+  border: 2px solid lightcoral;
+  border-radius: 10px;
+  box-shadow: 5px 4px 3px grey;
+  padding: 5px;
+  grid-column: 2 / 8;
+  grid-row: 3 / 5;
+  z-index: 1;
+}
+.hwgridcontent2 {
+  background-color: antiquewhite;
+  border: 2px solid lightcoral;
+  border-radius: 10px;
+  box-shadow: 5px 4px 3px grey;
+  padding: 5px;
+  grid-column: -2 / -8;
+  grid-row: 5 / 7;
 }
